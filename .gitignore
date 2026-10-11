@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+.wxt/
+dist/
+coverage/
+node_modules/
+*.zip
+.vercel

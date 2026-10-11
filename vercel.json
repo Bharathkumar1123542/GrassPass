@@ -1,0 +1,11 @@
+{
+  "buildCommand": "pnpm build && mkdir -p public && cp -R .output/chrome-mv3/. public/",
+  "outputDirectory": "public",
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/challenge.html"
+    }
+  ],
+  "cleanUrls": true
+}

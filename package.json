@@ -1,0 +1,30 @@
+{
+  "name": "grasspass",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "build:offline": "WXT_MODEL_LOCAL_PATH='' WXT_VISION_BACKEND_OVERRIDE=real wxt build",
+    "demo:local": "WXT_VISION_BACKEND_OVERRIDE=fake wxt dev",
+    "zip": "wxt zip",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@wxt-dev/module-react": "^1.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "wxt": "^0.20.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.3.5",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
+  }
+}
